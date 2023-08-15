@@ -1,0 +1,47 @@
+#app {
+  width: fit-content;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ratingContainer {
+  display: flex;
+  justify-content: center;
+}
+.item {
+  background-color: dimgray;
+  -webkit-mask-image: url(star.svg);
+  mask-image: url(star.svg);
+  width: 100px;
+  height: 98px;
+  cursor: pointer;
+}
+
+.item-full {
+  background-color: gold;
+}
+
+.rateValue {
+  font-size: 10rem;
+  color: aqua;
+}
+
+
+/* Experimental */
+.rateFade {
+  animation:rateFade 0.5s 1;
+  -webkit-animation:rateFade 0.5s 1;
+  animation-fill-mode: forwards;    
+  animation-delay:1s;
+  -webkit-animation-delay:1s; /* Safari and Chrome */
+  -webkit-animation-fill-mode: forwards;
+}
+@keyframes rateFade{
+  from {opacity :1;}
+  to {opacity :0;}
+}
+@-webkit-keyframes rateFade{
+  from {opacity :1;}
+  to {opacity :0;}
+}
+

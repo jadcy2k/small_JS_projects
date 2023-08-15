@@ -1,0 +1,32 @@
+
+#app {
+  margin: 0 auto;
+  width: fit-content;
+}
+#app h1 {
+  margin: 0;
+}
+
+#form {
+  width: 50vw;
+  margin: 0 auto;
+}
+
+.days-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid tomato;
+  border-top-width: 10px;
+  padding: 5px 0;
+}
+.days-block .days-number {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 25px;
+  color: whitesmoke;
+}
+.days-block .days-text {
+
+}

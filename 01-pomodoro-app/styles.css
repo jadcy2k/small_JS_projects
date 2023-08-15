@@ -1,0 +1,45 @@
+/* Global CSS variables */
+:root {
+  --font-weight: 400;
+  --border-radius: 0;
+  --primary: #fdd835;
+}
+
+/* Typography */
+h2,
+h3,
+hgroup > :last-child {
+  font-weight: 200;
+}
+h1.appTitle {
+  margin: 0 auto;
+  text-align: center;
+}
+#app {
+  width: 50vw;
+  margin: 0 auto;
+}
+#value {
+  font-size: 5rem;
+  text-align: center;
+}
+#taskName {
+  font-size: 3rem;
+  text-align: center;
+}
+
+small {
+  color: var(--muted-color);
+}
+
+/* Main */
+@media (min-width: 992px) {
+  main .grid {
+    grid-column-gap: var(--spacing-company);
+    grid-template-columns: auto 25%;
+  }
+}
+
+form.grid {
+  grid-row-gap: 0;
+}

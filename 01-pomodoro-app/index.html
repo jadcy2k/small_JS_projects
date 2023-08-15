@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css"> -->
+  <link rel="stylesheet" href="pico.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="modal.js"></script>
+  <title>Pomodoro app</title>
+</head>
+<body>
+
+  <main class="container">
+    <h1 class="appTitle"> Pomodoro App 🍅</h1>
+
+    <div id="app">
+      
+      <div id="time">
+        <div id="value"></div>
+        <div id="taskName"></div>
+      </div>
+
+      <div class="tasks-container">
+        <div class="form">
+          <form action="" id="form">
+            <input type="text" placeholder="enter a task..." id="itTask" />
+            <input type="submit" id="btnAdd" value="Click to add task" />
+          </form>          
+        </div>
+
+          <!-- Button to trigger the modal -->
+        <button class="secondary" data-target="modal-instructions" onClick="toggleModal(event)">
+          ...about this app
+        </button>
+
+        <!-- <a href="#" role="button" data-target="modal-instructions" onClick="toggleModal(event)">Modal Link</a> -->
+
+        <section id="tasks"></section>
+
+      </div>
+    </div>
+  </main>  
+
+
+
+<!-- Modal -->
+<dialog id="modal-instructions">
+  <article>
+    <a href="#close" aria-label="Close" class="close" data-target="modal-instructions" onClick="toggleModal(event)">
+    </a>
+    <h3>Beat procrastination and improve your focus one pomodoro at a time!</h3>
+    <p>
+    The secret to effective time management is...thinking in tomatoes rather than hours? 
+    It may seem silly at first, but millions of people swear by the life-changing power to the Pomodoro Technique. 
+    (Pomodoro is Italian for tomato. 🍅)
+    </p>
+    <p>
+    This popular time management method asks you to alternate pomodoros 
+    — focused work sessions — with frequent short breaks to promote sustained concentration and stave off mental fatigue.
+    </p>
+    <footer>
+      <a href="#confirm" role="button" data-target="modal-instructions" onClick="toggleModal(event)">
+        Got it !!
+      </a>
+    </footer>
+  </article>
+</dialog>
+ 
+</body>
+<script src="main.js"></script>
+</html>
